@@ -1,0 +1,21 @@
+#Sugarcuptea {
+    font-style: oblique;
+    color:crimson;
+}
+
+.Iceland {
+    font-weight: bolder;
+    color:chartreuse;
+}
+
+button{
+    background-color: blueviolet;
+    color:black
+}
+
+button:hover{
+    background-color: limegreen;
+    color:white;
+    padding: 20px;
+    transition-duration: 2s;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="TestCss.css">
+    <script src="TestJs.js"></script>
+    <title>Tutorial Site test</title>
+</head>
+<body>
+    <!-- Part 1: HTML -->
+    <h1>
+        Test #1: Header one
+    </h1>
+    <h2>
+        Test #2: Header two
+    </h2>
+    <p>
+        Test #3: Paragraph
+    </p>
+    <p style="color: blue;">
+        Test #4: color
+    </p>
+    <p style="font-style: italic;">
+        Test #5: Font-Style
+    </p>
+    <p>
+        Test #6: <a href="http://www.uat.edu"> Links </a>
+    </p>
+
+    <!-- Part 2: CSS -->
+
+    <p id="Sugarcuptea">
+        Test #7: ID
+    </p>
+    <p class="Iceland">
+        Test #8: class
+    </p>
+
+    <!-- Part 3: Scripting -->
+    
+    <script>
+        alert("Welcome!");
+        document.write("Test #9: Document Writing")
+        var CurrentTest = 10;
+        var Subject = "Variables (Seen in code)";
+        document.write("<br/>");
+        document.write("<br/>");
+        document.write("Test #" + CurrentTest + ": " + Subject);
+        document.write("<br/>");
+        document.write("<br/>");
+        var Testcomplete = true;
+        if (Testcomplete == true) {
+            document.write("Test #11: if statements: True")
+        }
+        else 
+        {
+            document.write("Test #11: if statements: False")
+        }
+    </script>
+
+    <br>
+    <br>
+
+    <!-- Part 4: Java Scripting/Functions -->
+
+<button onclick="buttonPress()">
+    Press to see test.
+</button>
+
+<p id="Countdown">uid</p>
+<p id="Countdown2">uid</p>
+
+<button onclick="Forloop();">Test #13: For Loops</button>
+<button onclick="Doloop();">Test #14: Do Loops</button>
+
+<!-- Part 5: Strings/Typefaces -->
+
+<form id="InputofString" onsubmit="return false">
+    Test #15: Typeface <input type="text" id="testName"/>
+    <br>
+    <input type="submit" onclick="strings();">
+
+    <br>
+    <br>
+
+    Input 1: <input type="text" id="Input1"/>
+    Input 2: <input type="text" id="Input2"/>
+</form>
+
+<div id="testNamedisplay">.</div>
+<div id="Output">.</div>
+<div id="Output2">.</div>
+<div id="Output3">.</div>
+<div id="Output4">.</div>
+<div id="Output5">.</div>
+<div id="Output6">.</div>
+<div id="Output7">.</div>
+<div id="Output8">.</div>
+
+<button onclick="changeButton()" id="myButton">Normal Button</button>
+<button>I dont do anything!</button>
+
+<br>
+<br>
+
+<form id="login" onsubmit="return false">
+    Name: <input type="text" id="name">
+    City: <input type="text" id="city" required>
+    BadgeNum: <input type="number" id="badge">
+
+    <input type="submit" onclick="checkCreds()"
+
+</form>
+
+
+
+</body>
+</html>
