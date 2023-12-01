@@ -7,17 +7,18 @@ function buttonPress() {
 function Forloop() {
 
     var CurrentTime = 10;
-    for (var i = 1; 1<12; i++)
-    {
-        setTimeout(function() {
+    for (var i = 1; i < 12; i++) {
+ 
+        setTimeout(function () {
             document.getElementById("Countdown").innerHTML = "Time left: " + CurrentTime;
             CurrentTime = CurrentTime - 1;
-        }, 1000*i);
+        }, 1000 * i);
     }
 }
 
 function Doloop() {
     var i = 1;
+    var CurrentTime = 10;
     alert("dhfshsuifhw");
     do 
     {
@@ -74,7 +75,6 @@ function checkCreds() {
     if (Name.length > 0) {
         alert("Test #24 - 26: login")
         if (Bnum > 99 && Bnum < 1000) {
-            location.replace("Strings.html")
         }
         else{
             alert("Invalid!")
