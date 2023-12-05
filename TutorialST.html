@@ -109,16 +109,35 @@
     City: <input type="text" id="city" required>
     BadgeNum: <input type="number" id="badge">
 
-    <input type="submit" onclick="checkCreds()">
+    <input type="submit" onclick="checkCreds();">
 
 </form>
 
 <br>
 <br>
-<!-- Part 6: Sound -->
+<!-- Part 6: EventDriven stuff-->
 
-<button onclick="startSound()"> Play Sound </button>
-<button onclick="stopSound()"> Stop Sound </button>
+<button id="startSound" onclick="startSound();"> Play Sound </button>
+<button id="stopSound" onclick="stopSound();"> Stop Sound </button>
+
+<audio controls>
+
+    <source src="spaceEngine_003.ogg" type="audio/mpeg"></source>
+
+</audio>
+
+<br>
+<br>
+<br>
+<br>
+<img src = "ButtonDesign.png" id = "Mememove" style="position:absolute; left:100px">
+<br>
+<br>
+<br>
+<br>
+<button id="Startthing" onclick="startMove();"> Move Image</button>
+<button id="Stopthing" onclick="stopMove();"> Stop Image </button>
+
 
 </body>
 </html>

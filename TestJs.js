@@ -88,8 +88,12 @@ function checkCreds() {
 
 function startSound() 
 {
-    mySound = new sound("spaceEngine_003.ogg");
+    mySound = new sound("hey.mp3");
     mySound.play();
+
+    document.getElementById("stopSound").disabled = false;
+    document.getElementById("startSound").disabled = true;
+
 }
 
 function sound(src)
@@ -101,4 +105,12 @@ function sound(src)
         this.sound.play()
     }
  
+}
+
+function stopSound(){
+    window.location.reload();
+
+    document.getElementById("startSound").disabled = false;
+    document.getElementById("stopSound").disabled = true;
+
 }
