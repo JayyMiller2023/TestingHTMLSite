@@ -91,8 +91,8 @@ function startSound()
     mySound = new sound("Audio/hey.mp3");
     mySound.play();
 
-    document.getElementById("stopSound").disabled = false;
-    document.getElementById("startSound").disabled = true;
+    document.getElementById("Stopthing").disabled = false;
+    document.getElementById("Startthing").disabled = true;
 
 }
 
@@ -110,7 +110,7 @@ function sound(src)
 function stopSound(){
     window.location.reload();
 
-    document.getElementById("startSound").disabled = false;
-    document.getElementById("stopSound").disabled = true;
+    document.getElementById("Startthing").disabled = false;
+    document.getElementById("Stopthing").disabled = true;
 
 }
