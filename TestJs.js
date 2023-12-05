@@ -88,7 +88,7 @@ function checkCreds() {
 
 function startSound() 
 {
-    mySound = new sound("hey.mp3");
+    mySound = new sound("Audio/hey.mp3");
     mySound.play();
 
     document.getElementById("stopSound").disabled = false;
