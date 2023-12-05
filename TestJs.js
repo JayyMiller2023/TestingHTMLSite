@@ -85,3 +85,20 @@ function checkCreds() {
         alert("invalid!")
     }
 }
+
+function startSound() 
+{
+    mySound = new sound("spaceEngine_003.ogg");
+    mySound.play();
+}
+
+function sound(src)
+{
+    this.sound = document.createElement("audio");
+    this.sound.src = src;
+    this.play = function()
+    {
+        this.sound.play()
+    }
+ 
+}
