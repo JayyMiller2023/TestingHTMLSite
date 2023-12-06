@@ -114,3 +114,22 @@ function stopSound(){
     document.getElementById("Stopthing").disabled = true;
 
 }
+
+var intervalid = 0;
+let change = 100;
+
+function startMove() {
+    var image = document.getElementById("Mememove");
+    intervalid = setInterval(function() {
+        image.style.left = change + "px";
+        image.style.top = change + "px";
+        document.getElementById("msg").innerHTML = "x = " + image.style.left + ", y = " + image.style.top;
+        change += 5;
+
+    }, 200);
+}
+
+function stopMove() {
+    function intervalid()
+    {clearInterval(intervalid)};
+}
